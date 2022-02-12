@@ -1,0 +1,26 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h1>SUMA</h1>
+<form asp-controller="Home" asp-action="Suma">
+    @if (ViewBag.DatoN1 == 0)
+    {
+
+    }
+    else
+    {
+        
+    }
+
+    <label>Dato1</label>
+    <input type="text" placeholder="Coloca tu primer numero" name="DatoN1" value="@ViewBag.DatoN1v" min=0 max=10>
+
+    <label>Dato2</label>
+    <input type="text" placeholder="Coloca tu segundo numero" name="DatoN2" value="@ViewBag.DatoN2v" min=0 max=10>
+    <button>Ok</button>
+
+    <label>Resultado: </label>
+    <label>@ViewBag.VariableEnviar</label>
+    </form>
