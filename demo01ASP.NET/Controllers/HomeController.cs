@@ -109,5 +109,14 @@ namespace demo01ASP.NET.Controllers
         {
             return View();
         }
+
+        public IActionResult Notas(){
+
+            return View();
+        }
+
+        public IActionResult IngresoNotas(){
+            return View();
+        }
     }
 }
