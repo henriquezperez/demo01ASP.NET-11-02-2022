@@ -4,30 +4,30 @@
 @{
 }
 <div class="mainnot">
-    <form class="mainnot">
+    <form class="mainnot" asp-controller="Home" asp-action="Notas">
         <div class="mb-3">
             <label class="form-label">Laboratorio 1</label>
-            <input type="text" class="form-control inputPassword2" id="lab1" aria-describedby="emailHelp">
+            <input type="text" class="form-control inputPassword2" name="lab1" aria-describedby="emailHelp">
         </div>
         <div class="mb-3">
             <label  class="form-label">Parcial 1</label>
-            <input type="text" class="form-control" id="par1">
+            <input type="text" class="form-control" name="par1">
         </div>
         <div class="mb-3">
             <label  class="form-label">Laboratorio 2</label>
-            <input type="text" class="form-control" id="lab2">
+            <input type="text" class="form-control" name="lab2">
         </div>
         <div class="mb-3">
             <label  class="form-label">Parcial 2</label>
-            <input type="text" class="form-control" id="par2">
+            <input type="text" class="form-control" name="par2">
         </div>
         <div class="mb-3">
             <label  class="form-label">Laboratorio 3</label>
-            <input type="text" class="form-control" id="lab3">
+            <input type="text" class="form-control" name="lab3">
         </div>
         <div class="mb-3">
             <label  class="form-label">Parcial 3</label>
-            <input type="text" class="form-control" id="par3">
+            <input type="text" class="form-control" name="par3">
         </div>
         <button type="submit" class="btn btn-primary">Subir notas</button>
     </form>

@@ -115,7 +115,17 @@ namespace demo01ASP.NET.Controllers
             return View();
         }
 
-        public IActionResult IngresoNotas(){
+        public IActionResult IngresoNotas(Double lab1, Double par1, Double lab2, Double par2, Double lab3, Double par3){
+            ViewBag.l1 = lab1;
+            ViewBag.l2 = lab2;
+            ViewBag.l3 = lab3;
+            ViewBag.p1 = par1;
+            ViewBag.p2 = par2;
+            ViewBag.p3 = par3;
+            Double promLab = ((lab1+lab2+lab3)/3)*0.40;
+            Double promPar = ((par1+par2+par3)/3)*0.60;
+            Double promFinal= promLab + promPar;
+            ViewBag.promf = promFinal;
             return View();
         }
     }
