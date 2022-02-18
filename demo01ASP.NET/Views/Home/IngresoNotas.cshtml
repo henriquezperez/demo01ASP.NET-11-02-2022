@@ -4,7 +4,7 @@
 @{
 }
 <div class="mainnot">
-    <form class="mainnot" asp-controller="Home" asp-action="Notas">
+    <form class="mainnot" asp-controller="Home" asp-action="IngresoNotas">
         <div class="mb-3">
             <label class="form-label">Laboratorio 1</label>
             <input type="text" class="form-control inputPassword2" name="lab1" aria-describedby="emailHelp">
@@ -32,3 +32,31 @@
         <button type="submit" class="btn btn-primary">Subir notas</button>
     </form>
 </div>
+
+<table class="table">
+  <thead>
+    <caption></caption>
+    <tr>
+      <th scope="col">Asignatura</th>
+      <th scope="col">L1</th>
+      <th scope="col">P1</th>
+      <th scope="col">L2</th>
+      <th scope="col">P2</th>
+      <th scope="col">L3</th>
+      <th scope="col">P3</th>
+      <th scope="col">Promedio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">PRO AP. II</th>
+      <td> @ViewBag.l1 </td>
+      <td> @ViewBag.p1 </td>
+      <td> @ViewBag.l2 </td>
+      <td> @ViewBag.p2 </td>
+      <td> @ViewBag.l3 </td>
+      <td> @ViewBag.p3 </td>
+      <td> @ViewBag.promf </td>
+    </tr>
+  </tbody>
+</table>
