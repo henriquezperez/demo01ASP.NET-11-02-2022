@@ -34,18 +34,19 @@ namespace demo01ASP.NET.Controllers
             return View();
         }
 
-        public IActionResult Suma(Double DatoN1, Double DatoN2)
+        public IActionResult Suma(Acciones acciones)
         {
+                //public IActionResult Suma(Double DatoN1, Double DatoN2)
 
-            if (DatoN1 > 10 || DatoN2 > 10)
+            if (acciones.Dato1 > 10 || acciones.Dato2 > 10)
             {
                 return View("NoMayores");
             }
 
-            ViewBag.DatoN1v = DatoN1;
-            ViewBag.DatoN2v = DatoN2;
+            ViewBag.DatoN1v = acciones.Dato1;
+            ViewBag.DatoN2v = acciones.Dato2;
 
-            Double resultado = DatoN1 + DatoN2;
+            Double resultado = acciones.Dato1 + acciones.Dato2;
             ViewBag.VariableEnviar = resultado;
             return View();
         }
