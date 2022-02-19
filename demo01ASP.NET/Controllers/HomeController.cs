@@ -128,5 +128,9 @@ namespace demo01ASP.NET.Controllers
             ViewBag.promf = promFinal;
             return View();
         }
+
+        public IActionResult PeticionTypeGet(){
+            return View();
+        }
     }
 }
