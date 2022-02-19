@@ -8,6 +8,5 @@ namespace demo01ASP.NET.Services{
         Double Resta(Acciones acciones);
         Double Multiplicacion(Acciones acciones);
         Double Division(Acciones acciones);
-
     }
 }
